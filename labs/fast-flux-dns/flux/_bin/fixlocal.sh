@@ -15,4 +15,4 @@
 #
 #   PERMLOCKDIR=/var/labtainer/did_param
 #   echo $1 | sudo -S mkdir -p "$PERMLOCKDIR"
-
+sudo nohup python3 -u /usr/local/bin/flux_ns.py > /tmp/flux_ns.log 2>&1 &
