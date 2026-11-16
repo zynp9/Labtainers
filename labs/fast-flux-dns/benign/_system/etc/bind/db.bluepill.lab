@@ -1,0 +1,10 @@
+$TTL 3600
+@  IN SOA ns1.bluepill.lab. admin.bluepill.lab. (
+       2026111601 3600 600 86400 300 )
+   IN NS  ns1.bluepill.lab.
+ns1      IN A  192.0.2.2            ; the REAL IP of the benign container
+
+www     86400 IN A 198.51.100.10          ; stable: choose a long TTL (in seconds) and 1 IP
+cdn      300 IN A 198.51.100.20         ; CDN-like: a moderate TTL, and repeat this
+cdn      300 IN A 198.51.100.21        ;   line for each IP (try 3 lines)
+cdn      300 IN A 198.51.100.22

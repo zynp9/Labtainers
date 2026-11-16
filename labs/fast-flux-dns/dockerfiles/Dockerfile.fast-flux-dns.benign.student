@@ -36,7 +36,7 @@ ENV APT_SOURCE $apt_source
 RUN /usr/bin/apt-source.sh
 #
 #  put package installation here, e.g.,
-#     RUN apt-get update && apt-get install -y --no-install-recommends somepackage
+RUN apt-get update && apt-get install -y --no-install-recommends bind9 dnsutils
 #
 #
 #

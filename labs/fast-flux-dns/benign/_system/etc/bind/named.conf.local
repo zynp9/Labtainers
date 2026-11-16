@@ -1,0 +1,4 @@
+zone "bluepill.lab" {
+    type master;
+    file "/etc/bind/db.bluepill.lab";
+};
