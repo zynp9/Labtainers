@@ -16,3 +16,5 @@
 #   PERMLOCKDIR=/var/labtainer/did_param
 #   echo $1 | sudo -S mkdir -p "$PERMLOCKDIR"
 echo "nameserver 172.25.0.4" | sudo tee /etc/resolv.conf
+nohup bash /usr/local/bin/browse.sh > /tmp/browse.log 2>&1 &
+nohup bash /usr/local/bin/beacon.sh > /tmp/beacon.log 2>&1 &
