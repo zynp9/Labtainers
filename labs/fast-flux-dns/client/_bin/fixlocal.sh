@@ -15,4 +15,4 @@
 #
 #   PERMLOCKDIR=/var/labtainer/did_param
 #   echo $1 | sudo -S mkdir -p "$PERMLOCKDIR"
-
+echo "nameserver 172.25.0.4" | sudo tee /etc/resolv.conf
